@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Basic Survey Form</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Happy Taste Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the quality</p>
+  </header>
+
+  <form action="" id="survey-form">
+    <label for="name-label">Name <span style="color: red;">*</span>
+      <input type="text" name="" id="name-label" placeholder="Enter your name" required>
+    </label>
+
+    <label for="date">Date <span style="color: red;">*</span>
+      <input type="date" name="" id="date-label" required>
+    </label>
+
+    <label for="restaurant-label">Restaurant's name <span style="color: red;">*</span>
+      <input type="text" name="" id="restaurant-label" placeholder="Enter the restaurant's name" required>
+    </label>
+
+    <label for="">How old are you now? <span style="color: red;">*</span>
+      <select name="" id="dropdown" required>
+        <option value="">Select your age</option>
+        <option value="1">below 16</option>
+        <option value="2">16-25</option>
+        <option value="3">26-35</option>
+        <option value="4">36-50</option>
+        <option value="5">Above 50</option>
+      </select>
+    </label>
+
+    <fieldset>
+      <label for="">
+        <p>How likely are you to recommend us to a friend or colleague?</p> 
+      </label>
+      <label for="definitely-recommend">
+        <input type="radio" name="recommend-radio" id="definitely-recommend" class="inline" checked> Definitely
+      </label>
+      <label for="maybe-recommend">
+        <input type="radio" name="recommend-radio" id="maybe-recommend" class="inline"> Maybe
+      </label>
+      <label for="not-sure-recommend">
+        <input type="radio" name="recommend-radio" id="not-sure-recommend" class="inline"> Not sure
+      </label>      
+    </fieldset>
+    
+    <label for="">How did you know us?
+      <select name="" id="dropdown">
+        <option value="">Select an option</option>
+        <option value="1">TV</option>
+        <option value="2">News</option>
+        <option value="3">Social Media</option>
+        <option value="4">Other</option>
+      </select>
+    </label>
+
+    <fieldset>
+      <label for="">
+        <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+      </label>
+      <label for="food-quality">
+        <input type="checkbox" name="improvement" id="food-quality" class="inline"> Quality of food
+      </label>
+      <label for="size">
+        <input type="checkbox" name="improvement" id="size" class="inline"> Portion size
+      </label>
+      <label for="ordering">
+        <input type="checkbox" name="improvement" id="ordering" class="inline"> Ease of Ordering
+      </label>
+      <label for="service">
+        <input type="checkbox" name="improvement" id="service" class="inline"> Service
+      </label>
+      <label for="cleanliness">
+        <input type="checkbox" name="improvement" id="cleanliness" class="inline"> Cleanliness
+      </label>
+      <label for="parking">
+        <input type="checkbox" name="improvement" id="parking" class="inline"> Parking Slot
+      </label>
+      <label for="attitude">
+        <input type="checkbox" name="improvement" id="attitude" class="inline"> Attitude
+      </label>
+      <label for="price">
+        <input type="checkbox" name="improvement" id="price" class="inline"> Reasonable price
+      </label>
+      <label for="appliances">
+        <input type="checkbox" name="improvement" id="appliances" class="inline"> Appliances
+      </label>
+      <label for="beverage">
+        <input type="checkbox" name="improvement" id="beverage" class="inline"> Quality of beverage
+      </label>
+      <label for="appearance">
+        <input type="checkbox" name="improvement" id="appearance" class="inline"> Appearance
+      </label>
+    </fieldset>
+
+    <label for="">Any comments or suggestions?
+      <textarea name="" id="" cols="10" rows="5" placeholder="Enter your comment here..."></textarea>
+    </label>
+
+    <label for="">
+      <input type="submit" value="Submit">
+    </label>
+  </form>
+</body>
+</html>

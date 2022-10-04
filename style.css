@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --color-text: #f3f3f3;
+  --color-form: #1b1b32;
+  --color-button: #FC0808;
+  --color-inside: #0a0a23;
+}
+
+body {
+  background-image: linear-gradient(115deg, rgba(60, 58, 158, 0.8), rgba(136, 143, 206, 0.7)), url('./img/background.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--color-text);
+  font-size: 24px;
+}
+
+header {
+  text-align: center;
+  margin: 30px auto;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+form {
+  background-color: var(--color-form);
+  margin: 0 auto;
+  min-width: 500px;
+  max-width: 800px;
+  width: 60vw;
+  padding: 5px 30px 5px 25px;
+}
+
+label {
+  display: block;
+  margin: 30px 0;
+}
+
+input, textarea, select {
+  width: 100%;
+  margin: 8px 0;
+  min-height: 30px;
+  display: block;
+  background-color: var(--color-inside);
+  border: 1px solid var(--color-inside);
+  color: var(--color-text);
+  font-size: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+.inline {
+  width: unset;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+span {
+  font-size: 18px;
+}
+
+input::placeholder, select, textarea {
+  font-size: 18px;
+  padding: 6px 5px;
+}
+
+input, textarea {
+  padding: 5px;
+}
+
+input[type="submit"] {
+  background-color: var(--color-button);
+  color: var(--color-text);
+  width: 40%;
+  margin: 10px auto;
+  padding: 10px 0;
+  border: none;
+  box-shadow: 2px 4px 5px black;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+input[type="submit"]:active {
+  box-shadow: none;
+}
